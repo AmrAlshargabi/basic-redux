@@ -36,7 +36,7 @@ npm install gh-pages --save-dev
 git remote add origin https://github.com/{AmrAlshargabi}/{basicreactjs3}.git
 =================================================================================
 # package.json
-"homepage": "https://AmrAlshargabi.github.io/basicreactjs3",
+"homepage": "https://amralshargabi.github.io/basic-redux",
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build",
 #
