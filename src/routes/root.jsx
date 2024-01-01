@@ -9,7 +9,7 @@ import CartPage from "../pages/CartPage";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "*",
     element: <HomePage />,
     errorElement: <ErrorPage />,
   },
