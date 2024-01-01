@@ -1,0 +1,62 @@
+# react-redux and toolkit
+npm install @reduxjs/toolkit react-redux
+# bootstrap and react-bootstrap
+npm install react-bootstrap bootstrap
+# react-router
+npm install react-router-dom
+========================================== deploy react js app to githop
+# create repositry in github and git clone 
+git clone https://github.com/AmrAlshargabi/basicreactjs3.git
+# cut clone files to main root files react app  and remove clone file
+# install github pages at react app in devloper mode
+npm i -D gh-pages
+# in my router replace createBrowserRouter to createHashRouter
+# in my ptoject opin package.json ander privete add homepage url from github repositry 
+# "homepage":"https://github.com/AmrAlshargabi/basic-react-js", and edit url to
+"homepage": "https://AmrAlshargabi.github.io/basic-react-js",
+# in package.json "scripts" add property predeploy and deploy
+"predeploy": "npm run build",
+"deploy":"gh-pages -d build",
+# in thermnal run deploy 
+npm run deploy
+#
+git add .
+#
+git commit -m " first deploy react app to githop"
+# push to githop
+git push
+======================================
+npm run deploy 
+git clone https://github.com/AmrAlshargabi/basicreactjs3.git
+npm install gh-pages --save-dev
+#
+"homepage": "https://AmrAlshargabi.github.io/basicreactjs3",
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+git remote add origin https://github.com/{AmrAlshargabi}/{basicreactjs3}.git
+=================================================================================
+# package.json
+"homepage": "https://AmrAlshargabi.github.io/basicreactjs3",
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+#
+npm install gh-pages --save-dev
+npm install --save gh-pages
+npm run build
+#
+npm install -g serve
+serve -s build
+cd build
+serve
+#
+set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Get-ExecutionPolicy
+Get-ExecutionPolicy -list
+#
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AmrAlshargabi/basic-redux.git
+git push -u origin main
+
