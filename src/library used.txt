@@ -4,7 +4,7 @@ npm install @reduxjs/toolkit react-redux
 npm install react-bootstrap bootstrap
 # react-router
 npm install react-router-dom
-================================================== deploy react js app to githob
+====================================================deploy react js app to githob
 =================================================================================
 # package.json
 "homepage": "https://amralshargabi.github.io/basic-redux",
