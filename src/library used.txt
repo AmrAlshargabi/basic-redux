@@ -4,7 +4,7 @@ npm install @reduxjs/toolkit react-redux
 npm install react-bootstrap bootstrap
 # react-router
 npm install react-router-dom
-================================================== deploy react js app to githop
+================================================== deploy react js app to githob
 =================================================================================
 # package.json
 "homepage": "https://amralshargabi.github.io/basic-redux",
@@ -34,4 +34,47 @@ git push -u origin main
 git add .
 git commit -m "setup gh-pages"
 git push
+=============================================================+++++++
+# stap to push my project to githob after create repositry in githob
 
+# stap 1
+## initialis githob repositry
+git init
+git add README.md
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AmrAlshargabi/basic-redux.git
+git push -u origin main
+
+# stap 2
+## install githob pages
+npm install gh-pages --save-dev
+
+# stap 3
+##edite package.json
+"homepage": "https://amralshargabi.github.io/basic-redux",
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
+# stap 4
+## push changed to githob
+git add .
+git commit -m "sacnde commit"
+git push
+
+# stap 5
+## build my project to test
+npm run build
+npm install -g serve
+serve -s build
+cd build
+serve
+# if not work seccass run commend
+set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Get-ExecutionPolicy
+Get-ExecutionPolicy -list
+
+# stap 6
+## deploy to githob repositry
+npm run deploy
