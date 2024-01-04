@@ -7,7 +7,11 @@ export const fetchProductes = createAsyncThunk(
         const data = await res.json();
         return data;
     });
-
+// const initialState = {
+//     data: [],
+//     isLoading: false,
+//     error: null,
+// }
 const ProducteSlice = createSlice({
     name: 'ProducteSlice',
     initialState: [],
