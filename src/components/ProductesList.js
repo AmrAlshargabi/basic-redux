@@ -3,7 +3,7 @@ import Producte from "./Producte";
 // import { useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import { fetchProductes } from "../rtk/Slices/ProducteSlice";
-import { useGetProducteQuery } from "../rtk/Slices/apiSlice";
+import { useGetProductesQuery } from "../rtk/Slices/apiSlice";
 
 export default function ProductesList() {
     const {
@@ -12,7 +12,7 @@ export default function ProductesList() {
         error,
         isLoading,
         isSuccess
-    } = useGetProducteQuery();
+    } = useGetProductesQuery();
     //  productes Slice
     // const productes = useSelector((state) => state.productes);
     // const despatch = useDispatch();
@@ -26,7 +26,6 @@ export default function ProductesList() {
                 {isError && <p> isError.....{error.error}</p>}
                 {isSuccess && <p> {productes.length}.....</p>}
                 {
-
                     productes?.map((producte) => {
                         return (
                             <Producte

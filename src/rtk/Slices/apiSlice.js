@@ -6,12 +6,13 @@ export const apiSlice = createApi({
     reducerPath: 'ProducteApi',
     baseQuery: fetchBaseQuery({ baseUrl: 'https://fakestoreapi.com/' }),
     endpoints: (builder) => ({
-        getProducte: builder.query({
+        getProductes: builder.query({
             query: () => `products/`,
         }),
+
     }),
 })
 
 // Export hooks for usage in function components, which are
 // auto-generated based on the defined endpoints
-export const { useGetProducteQuery } = apiSlice;
+export const { useGetProductesQuery } = apiSlice;
