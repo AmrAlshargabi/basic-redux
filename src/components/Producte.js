@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 export default function Producte({ id, title, price, description, image }) {
     return (
         <div className='col'>
@@ -14,6 +15,7 @@ export default function Producte({ id, title, price, description, image }) {
                         {price}
                     </Card.Text>
                     <Button variant="primary">Add to Cart</Button>
+                    <Link to={`/Productes/${id}`} className="button-primary">Ditales</Link>
                 </Card.Body>
             </Card>
         </div>

@@ -10,8 +10,8 @@ export default function AppNavbar() {
                 <Container>
                     <Link to="/" className='navbar-brand'>Navbar</Link>
                     <Nav className="me-auto">
-                        <Link to="/ProductesPage" className='nav-link'>Producte</Link>
-                        <Link to="/CartPage" className='nav-link'>Cart -1</Link>
+                        <Link to="/Productes" className='nav-link'>Producte</Link>
+                        <Link to="/cartPage" className='nav-link'>Cart -1</Link>
                     </Nav>
                 </Container>
             </Navbar>

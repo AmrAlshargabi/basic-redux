@@ -5,6 +5,7 @@ import ErrorPage from "../pages/ErrorPage";
 import HomePage from "../pages/HomePage";
 import ProductesPage from "../pages/ProductesPage";
 import CartPage from "../pages/CartPage";
+import ProducteDetals, { loader } from "../pages/ProducteDetals";
 
 
 const router = createBrowserRouter([
@@ -14,14 +15,20 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "ProductesPage",
+    path: "Productes",
     element: <ProductesPage />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "CartPage",
+    path: "cartPage",
     element: <CartPage />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "Productes/:producteid",
+    element: <ProducteDetals />,
+    errorElement: <ErrorPage />,
+    loader:loader
   },
 ],
 );
