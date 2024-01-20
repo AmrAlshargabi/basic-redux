@@ -1,0 +1,82 @@
+.header {
+    background: transparent !important;
+    padding: 15px 0;
+    padding: 15px 0;
+    top: 0px;
+    z-index: 9996 !important;
+    transition-property: background, box-shadow !important;
+    transition-duration: 0.45s, 0s !important;
+    transition-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
+    transition-delay: 0.1s, 0s !important;
+}
+
+.logo-link {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.header .logo .logo-link img.invisible {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header .logo .logo-link img {
+    max-width: 300px !important;
+    max-height: 70px !important;
+    transition-property: position, visibility, opacity !important;
+    transition-duration: 0s, 0.7s, 0.7s !important;
+    transition-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
+    transition-delay: 0s, 0.1s, 0.1s !important;
+    position: initial !important;
+    visibility: initial !important;
+    opacity: 1 !important;
+    box-sizing: border-box;
+    max-width: 300px !important;
+    max-height: 70px !important;
+    transition-property: position, visibility, opacity !important;
+    transition-duration: 0s, 0.7s, 0.7s !important;
+    transition-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
+    transition-delay: 0s, 0.1s, 0.1s !important;
+    max-width: 300px !important;
+    max-height: 70px !important;
+    transition-property: position, visibility, opacity !important;
+    transition-duration: 0s, 0.7s, 0.7s !important;
+    transition-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
+    transition-delay: 0s, 0.1s, 0.1s !important;
+}
+
+
+
+.header .nav-menu>ul {
+    display: flex;
+}
+
+.header .nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header .nav-menu>ul>.p-li {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.header .nav-menu>ul>li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu>ul>.m-li {
+    margin-right: 20px;
+    margin-left: 0px;
+}
